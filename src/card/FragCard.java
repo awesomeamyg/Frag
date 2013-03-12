@@ -76,7 +76,7 @@ public class FragCard extends Card {
             break;
          case 48: //"Game Hack: Theft"
             System.out.println("Generate random number Not yet implemented");
-            int n = 0;
+            //int n = 0;
             //map.player.giveCard(new Card);
             System.out.println("Playing case 48: Game Hack: Theft Not yet implemented");
             break;

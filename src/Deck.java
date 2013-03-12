@@ -2,6 +2,7 @@ import java.util.Random;
 
 public class Deck {
 
+   int YourFace;
    int[] cards;
    int numCards;
 

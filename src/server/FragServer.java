@@ -59,13 +59,6 @@ class FragServer {
             /* This block sends the movement to all other players */
             String[] playerArr = message.split("\\s");
             
-            int playerIndex;
-            for(int i=0; i<currentPlayers; i++) {
-               if(playerArr[0].equals(players[i].getName())) {
-                  playerIndex = i;
-               }
-            }
-            
             for(int i=0; i<currentPlayers; i++) {
                if(!playerArr[0].equals(players[i].getName())) {
                   System.out.println(playerArr[0] + " => " + 

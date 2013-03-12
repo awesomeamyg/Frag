@@ -123,9 +123,12 @@ class FragServer {
                }
             }
             
-            System.out.println( players[index].getName() + " gadget " + gadget.drawCard());
+            int gadgetCard = gadget.drawCard();
+            System.out.println( players[index].getName() + " gadget " 
+                  + gadgetCard);
+            
             clients.sendPacket(players[index].getIP(),
-                  players[index].getName() + " gadget " + gadget.drawCard());
+                  players[index].getName() + " gadget " + gadgetCard);
          }
          else if(message.matches("^\\w+ request weapon")) {
             String[] playerArr = message.split("\\s");
@@ -138,9 +141,12 @@ class FragServer {
                }
             }
             
-            System.out.println( players[index].getName() + " weapon " + weapon.drawCard());
+            int weaponCard = gadget.drawCard();
+            System.out.println( players[index].getName() + " weapon " 
+                  + weaponCard);
+            
             clients.sendPacket(players[index].getIP(),
-                  players[index].getName() + " weapon " + weapon.drawCard());
+                  players[index].getName() + " weapon " + weaponCard);
          }
          else if(message.matches("^\\w+ request frag")) {
             String[] playerArr = message.split("\\s");
@@ -152,9 +158,13 @@ class FragServer {
                   break;
                }
             }
-            System.out.println( players[index].getName() + " frag " + frag.drawCard());
+            
+            int fragCard = gadget.drawCard();
+            System.out.println( players[index].getName() + " frag " 
+                  + fragCard);
+            
             clients.sendPacket(players[index].getIP(),
-                  players[index].getName() + " frag " + frag.drawCard());
+                  players[index].getName() + " frag " + fragCard);
          }
       }
    }

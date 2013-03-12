@@ -212,9 +212,11 @@ public class MapPanel extends JPanel implements MouseListener{
       int y = (location.y-borderLength)/boxHeight;
 
       for(int i=0; i<map.MAXOTHERPLAYERS; i++){
-         Point p = map.otherPlayers[i].getLocation();
-         if(p.x == x && p.y == y){
+         if (map.otherPlayers[i] != null){
+            Point p = map.otherPlayers[i].getLocation();
+            if(p.x == x && p.y == y){
                map.resolveAttack(new Point(x, y), map.otherPlayers[i]);
+            }
          }
       }
    }

@@ -141,7 +141,7 @@ class FragServer {
                }
             }
             
-            int weaponCard = gadget.drawCard();
+            int weaponCard = weapon.drawCard();
             System.out.println( players[index].getName() + " weapon " 
                   + weaponCard);
             
@@ -159,7 +159,7 @@ class FragServer {
                }
             }
             
-            int fragCard = gadget.drawCard();
+            int fragCard = frag.drawCard();
             System.out.println( players[index].getName() + " frag " 
                   + fragCard);
             

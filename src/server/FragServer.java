@@ -1,4 +1,9 @@
+package server;
+
 import java.awt.Point;
+
+import card.Deck;
+import client.Player;
 
 class FragServer {
    final static int port = 9876;

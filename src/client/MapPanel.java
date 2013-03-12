@@ -1,3 +1,4 @@
+package client;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
@@ -5,6 +6,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 import javax.swing.JPanel;
+
 
 
 @SuppressWarnings("serial")

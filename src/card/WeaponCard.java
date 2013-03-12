@@ -1,3 +1,5 @@
+package card;
+
 public class WeaponCard extends Card{
 
    int rawNumber;

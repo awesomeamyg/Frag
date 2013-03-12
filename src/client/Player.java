@@ -1,5 +1,12 @@
+package client;
+
 import java.awt.Point;
 import java.net.InetAddress;
+
+import card.Card;
+import card.FragCard;
+import card.GadgetCard;
+import card.WeaponCard;
 
 public class Player {
    String name;

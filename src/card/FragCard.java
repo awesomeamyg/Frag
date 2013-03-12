@@ -1,4 +1,7 @@
+package card;
 import java.awt.Point;
+
+import client.Map;
 
 public class FragCard extends Card {
 

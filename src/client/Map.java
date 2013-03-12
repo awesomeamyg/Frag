@@ -1,3 +1,5 @@
+package client;
+
 import java.awt.Point;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -5,6 +7,9 @@ import java.io.IOException;
 import java.util.Random;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+
+import card.FragCard;
+
 
 @SuppressWarnings("serial")
 public class Map extends JFrame implements KeyListener{
@@ -25,7 +30,7 @@ public class Map extends JFrame implements KeyListener{
    Point[][] WallLocations;
 
    MapPanel panel;
-   Player player;
+   public Player player;
 
    public static void main (String[] args){
       new Map();

@@ -1,3 +1,6 @@
+package card;
+import client.Player;
+
 public class GadgetCard extends Card {
 
    int rawNumber;

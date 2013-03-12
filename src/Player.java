@@ -119,7 +119,7 @@ public class Player {
          + " " + this.accuracy + " " + this.location.x + " " + this.location.y);
    }
 
-   public void setMaxHandSize(int n) { int handSize = n; }
+   public void setMaxHandSize(int n) { maxHandSize = n; }
 
    public void setIP(InetAddress ip) { this.IPAddress = ip; }
 
